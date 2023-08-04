@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<DialogPane prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kontakti.DodavanjeKontroler">
+    <content>
+        <GridPane>
+            <children>
+                <Label alignment="TOP_LEFT" text="First name">
+               <font>
+                  <Font name="Century Gothic Bold" size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets></Label>
+                <Label alignment="TOP_LEFT" text="Last name" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Century Gothic Bold" size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets></Label>
+                <Label alignment="TOP_LEFT" text="Phone No." GridPane.rowIndex="2">
+               <font>
+                  <Font name="Century Gothic Bold" size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets></Label>
+                <Label alignment="TOP_LEFT" text="E-Mail" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Century Gothic Bold" size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets></Label>
+                <TextField fx:id="firstNameUnos" minWidth="-Infinity" prefWidth="166.0" GridPane.columnIndex="1">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="15.0" />
+               </GridPane.margin></TextField>
+                <TextField fx:id="lastNameUnos" minWidth="-Infinity" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="15.0" />
+               </GridPane.margin></TextField>
+                <TextField fx:id="phoneNumberUnos" minWidth="-Infinity" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="15.0" />
+               </GridPane.margin></TextField>
+                <TextField fx:id="eMailUnos" minWidth="-Infinity" prefHeight="25.0" prefWidth="163.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="15.0" />
+               </GridPane.margin></TextField>
+            </children>
+         <columnConstraints>
+            <ColumnConstraints maxWidth="83.0" minWidth="75.0" prefWidth="83.0" />
+            <ColumnConstraints maxWidth="191.0" minWidth="183.0" prefWidth="183.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+        </GridPane>
+    </content>
+</DialogPane>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="mainPane" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kontakti.Controller">
+    <center>
+        <TableView fx:id="stavkeTableView" style="-fx-border-color: #cccccc;-fx-font-size:14;-fx-font-family:Arial;-fx-font-style:Italic" BorderPane.alignment="CENTER">
+
+            <columns>
+                <TableColumn fx:id="firstNameCol" maxWidth="1.7976931348623157E308" style="-fx-background-color: #ff8999;-fx-border-color:  #bfbfbf;" text="First name" />
+                <TableColumn fx:id="lastNameCol" maxWidth="1.7976931348623157E308" style="-fx-background-color: #ffffcc;-fx-border-color:  #bfbfbf;" text="Last name" />
+                <TableColumn fx:id="phoneNumberCol" maxWidth="1.7976931348623157E308" style="-fx-background-color: #99ccff;-fx-border-color:  #bfbfbf;" text="Phone Number" />
+                <TableColumn fx:id="eMailCol" maxWidth="1.7976931348623157E308" style="-fx-background-color: #ffcc99;-fx-border-color:  #bfbfbf;" text="E-Mail" />
+            </columns>
+         <effect>
+            <InnerShadow />
+         </effect>
+
+<!--         <padding>-->
+<!--            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />-->
+<!--         </padding>-->
+        </TableView>
+
+    </center>
+    <top>
+        <VBox BorderPane.alignment="CENTER">
+            <Label text="Contacts" BorderPane.alignment="CENTER">
+                <font>
+                    <Font name="System Bold" size="14.0" />
+                </font>
+            </Label>
+            <MenuBar BorderPane.alignment="CENTER">
+                <Menu mnemonicParsing="false" text="File">
+                    <MenuItem mnemonicParsing="false" onAction="#otvoriDijalog" text="New" />
+                    <MenuItem mnemonicParsing="false" text="Exit" />
+                </Menu>
+            </MenuBar>
+        </VBox>
+    </top>
+</BorderPane>
